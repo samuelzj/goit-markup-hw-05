@@ -525,6 +525,7 @@ button:focus {
 
 .sub-icon {
     margin-left: 16px;
+    fill: white;
 }
 
 /* Modal */
@@ -688,9 +689,33 @@ button:focus {
 
 .modal-terms {
     margin-bottom: 24px;
+    display: flex;
 }
 
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
 
+.check-terms {
+    cursor: pointer;
+}
+
+.check-terms:checked .privacy-icon,
+.check:focus ,.privacy-icon,
+input[type="checkbox"]:checked + .privacy-icon {
+    background-color: #404bbf;
+    border: none;
+    fill: #f4f4fd;
+}
 
 .privacy {
     width: 16px;
@@ -704,12 +729,6 @@ button:focus {
     align-items: center;
     justify-content: center;
     fill: transparent;
-}
-
-input:checked {
-    background-color:#404bbf;
-    border: none;
-    fill: #F4F4FD;
 }
 
 .link-privacy {
@@ -735,7 +754,7 @@ input:checked {
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-/* .is-open { 
+/* .is-open {
     opacity: 0;
     visibility: hidden;
     pointer-events: none;

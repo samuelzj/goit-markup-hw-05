@@ -467,12 +467,15 @@
           <textarea class="comment-modal" name="user-comment" placeholder="Text input" id="user-comment"></textarea>
         </div>
         <div class="modal-terms">
-          <input type="checkbox" class="visually-hidden" id="user-privacy" value="true" name="user-privacy" required>
-          <label for="user-privacy" class="form-label">I accept the terms and conditions of the <span class="privacy">
+          <input type="checkbox" class="visually-hidden check-terms" id="user-privacy" value="true" name="user-privacy"
+            required>
+          <label for="user-privacy" class="form-label">
+            <span class="privacy">
               <svg class="privacy-icon" width="10" height="8">
                 <use href="./images/icons.svg#icon-emailmodal"></use>
               </svg>
             </span>
+            I accept the terms and conditions of the
             <a href="" class="link-privacy">Privacy Policy</a></label>
         </div>
         <button class="send-button" type="submit" name="submit">Send</button>
