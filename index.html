@@ -42,7 +42,7 @@
     <section class="main-one">
       <div class="container">
         <h1 class="first-round">Effective Solutions for Your Business</h1>
-        <button class="clicker" type="button">Order Service</button>
+        <button type="button" class="clicker" data-modal-open>Order Service</button>
       </div>
     </section>
 
@@ -423,6 +423,58 @@
       </div>
     </div>
   </footer>
+
+  <!-- modal -->
+
+  <div class="backdrop is-open">
+    <div class="modal">
+      <button type="button" class="close-btn">
+        <svg class="modal-close-icon" width="8" height="8">
+          <use href="./images/icons.svg#icon-iconclose"></use>
+        </svg>
+      </button>
+      <p class="modal-form-title">Leave your contacts and we will call you back</p>
+      <form class="form-modal">
+        <div class="form-title">
+          <label for="user-name" class="form-label">Name</label>
+          <div class="form-div-text">
+            <input type="text" name="user-name" id="user-name" class="form-text">
+            <svg class="form-icon" width="18" height="24">
+              <use href="./images/icons.svg#icon-personmodal"></use>
+            </svg>
+          </div>
+        </div>
+        <div class="form-title">
+          <label for="phone" class="form-label">Phone</label>
+          <div class="form-div-text">
+            <input type="tel" name="phone" id="phone" class="form-text">
+            <svg class="form-icon" width="18" height="24">
+              <use href="./images/icons.svg#icon-telmodal"></use>
+            </svg>
+          </div>
+        </div>
+        <div class="form-title">
+          <label for="email" class="form-label">Email</label>
+          <div class="form-div-text">
+            <input type="email" name="email" id="email" class="form-text">
+            <svg class="form-icon" width="18" height="24">
+              <use href="./images/icons.svg#icon-emailmodal"></use>
+            </svg>
+          </div>
+        </div>
+        <div class="form-end">
+          <label for="user-comment" class="form-label">Comment</label>
+          <textarea class="comment-modal" name="user-comment" placeholder="Text input" id="user-comment"></textarea>
+        </div>
+        <div class="modal-terms">
+          <input type="checkbox" class="visually-hidden" id="user-privacy" value="true" name="user-privacy" required>
+          <label for="user-privacy" class="form-label">I accept the terms conditions of the privace policy</label>
+        </div>
+        <button class="send-button" type="submit" name="submit">Send</button>
+      </form>
+    </div>
+  </div>
+  </div>
 </body>
 
 </html>
