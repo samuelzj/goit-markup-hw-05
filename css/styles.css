@@ -709,6 +709,12 @@ button:focus {
     cursor: pointer;
 }
 
+.check-terms:checked + .form-label span {
+    background-color: #404bbf;
+    border: none;
+    fill: #f4f4fd;
+}
+
 .privacy {
     width: 16px;
     height: 16px;
