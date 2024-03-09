@@ -707,8 +707,10 @@ button:focus {
     fill: transparent;
 }
 
-.checkbox:active {
-    
+.visually-hidden:active .privacy {
+    background-color: #404bbf;
+    fill: #F4F4FD;
+    border: none;
 }
 
 .send-button {
