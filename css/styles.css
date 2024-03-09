@@ -601,18 +601,11 @@ button:focus {
 }
 
 .form-title {
-    /* display: flex; 
-    align-content: center;
-    align-items: center;
-    margin-bottom: 8px; */
+    margin-bottom: 8px;
 }
 
-.form-title:focus-within {
-    border-color: #4d5ae5;
-}
-
-.form-title:focus-within .modal-close-icon {
-    fill: #4d5ae5;
+.form-title:focus-within .form-icon {
+    fill: #4D5AE5;
 }
 
 .form-label {
@@ -637,7 +630,6 @@ button:focus {
     top: 50%;
     transform: translateY(-50%);
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
 }
 
 .form-text {
@@ -653,6 +645,8 @@ button:focus {
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     border: 1px solid rgba(46, 47, 66, 0.4);
 }
+
+
 
 .form-text:focus {
     border-color: #4d5ae5;
@@ -697,18 +691,7 @@ button:focus {
     margin-bottom: 24px;
 }
 
-.visually-hidden {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    border: 0;
-    padding: 0;
-    white-space: nowrap;
-    clip-path: inset(100%);
-    clip: rect(0 0 0 0);
-    overflow: hidden;
-}
+
 
 .privacy {
     width: 16px;
